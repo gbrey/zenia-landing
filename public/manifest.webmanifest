@@ -1,0 +1,18 @@
+{
+  "name": "Zenia",
+  "short_name": "Zenia",
+  "description": "Landing PWA de Zenia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3eee4",
+  "theme_color": "#245246",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

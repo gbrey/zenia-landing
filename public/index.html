@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zenia — el producto, en tu bolsillo</title>
+    <meta
+      name="description"
+      content="Zenia es una PWA. Esta es la primera pieza: una landing liviana, instalable y lista para crecer."
+    />
+    <meta name="theme-color" content="#245246" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Fraunces:opsz,wght@9..144,520&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="wrap">
+      <header>
+        <div class="mark">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="16" fill="#245246" />
+            <path
+              d="M18 42 32 16l14 26"
+              fill="none"
+              stroke="#f3eee4"
+              stroke-width="5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle cx="32" cy="44" r="3.5" fill="#c4922a" />
+          </svg>
+          Zenia
+        </div>
+        <div class="nav-actions">
+          <button class="btn btn-ghost" type="button" data-install hidden>
+            Instalar app
+          </button>
+        </div>
+      </header>
+
+      <main class="hero">
+        <section>
+          <p class="eyebrow">Producto nuevo · PWA</p>
+          <h1>Una app que se siente en casa desde el primer tap.</h1>
+          <p class="lead">
+            Zenia nace como PWA: rápida, instalable y conectada a un flujo
+            simple. Cada push a GitHub publica esta landing en Cloudflare.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-solid" href="#producto">Ver el primer corte</a>
+            <button class="btn btn-ghost" type="button" data-install>
+              Instalar Zenia
+            </button>
+          </div>
+        </section>
+
+        <aside class="panel" id="producto">
+          <div class="orb" role="img" aria-label="Marca visual de Zenia"></div>
+          <div class="meta">
+            <p>
+              <strong>Landing</strong>
+              Primera pieza pública del producto.
+            </p>
+            <p>
+              <strong>Cloudflare</strong>
+              Deploy automático en cada push.
+            </p>
+            <p>
+              <strong>PWA</strong>
+              Offline básico e icono en el inicio.
+            </p>
+          </div>
+        </aside>
+      </main>
+    </div>
+    <div class="toast" data-toast hidden></div>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
